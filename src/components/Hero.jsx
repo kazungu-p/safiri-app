@@ -16,7 +16,6 @@ function Hero(){
                 <h1>Safiri na sisi!</h1>
                 <div className="form-container">
                     <h2>Book . Pay . Travel</h2>
-                    <p>Easy, safer and Convenient booking</p>
                     <Form 
                         fields={fields}
                         buttonText= "Search"
