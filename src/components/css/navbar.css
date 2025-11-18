@@ -78,7 +78,11 @@ a{
         flex-direction: column;
     }
     .nav-links.active{
+        z-index: 1;
         max-height: 300px;
         padding: 15px;
+    }
+    .logo{
+        width: 35px;
     }
 }
