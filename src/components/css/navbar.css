@@ -52,3 +52,33 @@ a{
     width: 45px;
     cursor: pointer;
 }
+.hamburger{
+    display: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+@media screen and (max-width: 750px){
+    .hamburger{
+        display: block;
+    }
+    .nav-links{
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: #0C2B4E;
+        padding: 0 15px;
+        width: 200px;
+        transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    }
+    .nav-links ul{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .nav-links.active{
+        max-height: 300px;
+        padding: 15px;
+    }
+}

@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import "./css/navbar.css";
 
-function Navbar() {
+function Navbar(){
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    function toggleMenu(){
+        setMenuOpen(!menuOpen);
+    }
 
     return (
         <div className="nav-container">
@@ -16,10 +22,9 @@ function Navbar() {
                     </div>
                     <div className="nav-bottom">
                         <div className="logo-container">
-                            <img src="src/assets/destination.png" alt="logo-image" className="logo" />
+                            <img src="src/assets/destination.png" alt="logo-image" className="logo"/>
                         </div>
-
-                        <div className="nav-links">
+                        <div className={`nav-links ${menuOpen ? "active" : ""}`}>
                             <ul>
                                 <li><a href="">Home</a></li>
                                 <li><a href="">About us</a></li>
@@ -27,9 +32,12 @@ function Navbar() {
                                 <li><a href="">Sign in/ Register</a></li>
                             </ul>
                         </div>
+                        <div className="hamburger" onClick={toggleMenu}>
+                            {menuOpen ? "\u2715" : "\u2630"}
+                        </div>
 
                     </div>
-                </nav>
+            </nav>
             </header>
         </div>
     )
