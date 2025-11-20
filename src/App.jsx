@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "./components/navbar";
 import Hero from "./components/Hero";
+import Marketing from "./components/Marketing";
+import marketingData from "./assets/data/marketingData";
+
 
 function App() {
 
@@ -8,6 +11,7 @@ function App() {
     <>
      <Navbar />
      <Hero />
+     <Marketing title="Why Us?" data={marketingData}/>
     </>
   )
 }

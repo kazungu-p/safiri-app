@@ -4,4 +4,9 @@
 }
 body{
   font-family: "Nunito Sans";
+   -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
