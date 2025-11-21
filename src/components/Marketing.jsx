@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/marketing.css"
 import Card from "./Card";
 
-function Marketing({title, data}) {
+function Marketing({title, data, className}) {
 
     function getItem(cardItem){
         return <Card 
@@ -14,7 +14,7 @@ function Marketing({title, data}) {
     }
 
     return (
-        <div className="ad-container">
+        <div className={`ad-container ${className || ""}`}>
             <h1>{title}</h1>
             <div className="card-container">
                 {

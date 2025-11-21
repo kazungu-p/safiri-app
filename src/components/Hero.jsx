@@ -1,14 +1,8 @@
 import React from "react";
 import "./styles/Hero.css"
-import Form from "./Form";
+import BookingForm from "./BookingForm";
 
 function Hero(){
-
-    const fields = [
-        {type : "text", placeholder : "From"},
-        {type : "text", placeholder : "To"},
-        {type : "date", placeholder : "Date"}
-    ];
 
     return(
         <div className="image-container">
@@ -16,10 +10,7 @@ function Hero(){
                 <h1>Safiri na sisi!</h1>
                 <div className="form-container">
                     <h2>Book . Pay . Travel</h2>
-                    <Form 
-                        fields={fields}
-                        buttonText= "Search"
-                    />
+                    <BookingForm />
                 </div>
             </div>
             
