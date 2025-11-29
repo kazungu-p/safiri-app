@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/hero.css"
+import "../assets/styles/hero.css"
 import BookingForm from "./BookingForm";
 
 function Hero(){

@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/marketing.css"
+import "../assets/styles/marketing.css"
 import Card from "./Card";
 
 function Marketing({title, data, className}) {

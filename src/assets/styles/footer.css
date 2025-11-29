@@ -1,0 +1,59 @@
+.footer-container{
+    background: linear-gradient(135deg,#D92C54,#932F67);
+    color: white;
+    padding: 20px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.footer-container hr{
+    outline: 0;
+    width: 90%;
+    color: white;
+}
+.information-segment{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.info-segment{
+    width: 400px;
+}
+.social-segment, .contact-segment{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-segment ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.social-segment h2{
+    text-align: center;
+}
+.contact-segment h2, .info-segment h2, .social-segment h2{
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+.social-segment img{
+    width: 30px;
+    cursor: pointer;
+}
+.contact-segment img{
+    width: 20px;
+    margin-right: 10px;
+}
+.phone-group{
+    display: flex;
+}
+@media screen and (max-width:750px){
+    .information-segment{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .social-segment h2{
+        text-align: left;
+    }
+}

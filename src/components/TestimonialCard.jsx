@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/testimonials.css";
+import "../assets/styles/testimonials.css";
 import "swiper/css"
 import "swiper/swiper-bundle.css"
 import {Swiper, SwiperSlide} from "swiper/react";
