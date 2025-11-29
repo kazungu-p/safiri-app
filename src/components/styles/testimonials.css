@@ -1,0 +1,57 @@
+.testimonial-container{
+    padding: 20px 4%;
+}
+.swiper{
+    min-height: 200px;
+}
+.testimonial-container h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.6em;
+    font-style: bolder
+}
+.swiper-pagination-bullet{
+    display: none !important;
+}
+.testimonial-card{
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px #222;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.review{
+    text-align: center;
+    font-size: 17px;
+    padding: 20px 0;
+}
+.person-info{
+    text-align: right;
+    margin-right: 20px;
+    opacity: 0.7;
+}
+.swiper-button-next,
+.swiper-button-prev{
+    color: #2222 !important;
+    font-size: 25px;
+    transition: 0.3s;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    color: #222 !important;
+}
+
+@media screen and (max-width:750px){
+    .testimonial-card{
+        width: 90%;
+        height: 200px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none !important;
+    }
+    .swiper {
+       min-height: 250px;
+    }
+}
