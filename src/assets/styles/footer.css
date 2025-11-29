@@ -56,4 +56,7 @@
     .social-segment h2{
         text-align: left;
     }
+    .info-segment{
+        width: fit-content;
+    }
 }
