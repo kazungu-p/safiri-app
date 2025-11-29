@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../assets/styles/navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar(){
 
@@ -26,10 +27,10 @@ function Navbar(){
                         </div>
                         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
                             <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About us</a></li>
-                                <li><a href="">Contact us</a></li>
-                                <li><a href="">Sign in/ Register</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About Us</Link></li>
+                                <li><Link to="contact">Contact Us</Link></li>
+                                <li><Link to="joinus">Sign in/ Register</Link></li>
                             </ul>
                         </div>
                         <div className="hamburger" onClick={toggleMenu}>

@@ -1,23 +1,26 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Marketing from "./components/Marketing";
-import marketingData from "./assets/data/marketingData";
-import destinationsData from "./assets/data/destinationsData";
-import TestimonialCard from "./components/TestimonialCard";
 import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
 
   return (
-    <>
-     <Navbar />
-     <Hero />
-     <Marketing title="Why Us?" data={marketingData}/>
-     <Marketing title="Top Destinations" data={destinationsData} className="destinations-section"/>
-     <TestimonialCard />
-     <Footer />
-    </>
+    <Router>
+      <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About/>}/>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/join" />
+        </Routes>
+      <Footer />
+    </Router>
   )
 }
 
