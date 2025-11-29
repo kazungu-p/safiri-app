@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Marketing from "./components/Marketing";
 import marketingData from "./assets/data/marketingData";
