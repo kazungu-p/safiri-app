@@ -3,7 +3,7 @@ import "../assets/styles/footer.css";
 
 function Footer() {
 
-    const currentYear = new Date().getFullYear
+    const currentYear = new Date().getFullYear()
 
     return (
         <div className="footer-container">
