@@ -1,5 +1,5 @@
 .nav-container{
- background-color: #4A70A9;   
+ background-color: #4A70A9;
 }
 ul{
     list-style: none;
@@ -20,7 +20,7 @@ a{
 .nav-bottom{
     background-color: #0C2B4E;
     padding: 10px 4%;
-    
+
 }
 .nav-bottom, .nav-links ul{
     display: flex;
