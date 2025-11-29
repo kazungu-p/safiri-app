@@ -4,7 +4,7 @@ import Hero from "./components/Hero";
 import Marketing from "./components/Marketing";
 import marketingData from "./assets/data/marketingData";
 import destinationsData from "./assets/data/destinationsData";
-import Testimonials from "./components/Testimonials.jsx";
+import TestimonialCard from "./components/TestimonialCard";
 
 function App() {
 
@@ -14,7 +14,7 @@ function App() {
      <Hero />
      <Marketing title="Why Us?" data={marketingData}/>
      <Marketing title="Top Destinations" data={destinationsData} className="destinations-section"/>
-     <Testimonials />
+     <TestimonialCard />
     </>
   )
 }

@@ -6,7 +6,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination,Autoplay, Navigation } from "swiper/modules";
 import testimonialData from "../assets/data/testimonialData";
 
-function Testimonials (){
+function TestimonialCard(){
 
     return(
         <div className="testimonial-container">
@@ -38,4 +38,4 @@ function Testimonials (){
     )
 }
 
-export default Testimonials;
+export default TestimonialCard;
