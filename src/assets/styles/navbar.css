@@ -58,6 +58,9 @@ a{
     font-size: 25px;
     cursor: pointer;
 }
+.nav-item.active{
+    color: #932F67;
+}
 @media screen and (max-width: 750px){
     .hamburger{
         display: block;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../assets/styles/navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar(){
 
@@ -27,10 +27,10 @@ function Navbar(){
                         </div>
                         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
                             <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About Us</Link></li>
-                                <li><Link to="contact">Contact Us</Link></li>
-                                <li><Link to="joinus">Sign in/ Register</Link></li>
+                                <li><NavLink to="/" className="nav-item" onClick={()=>setMenuOpen(false)}>Home</NavLink></li>
+                                <li><NavLink to="/about" className="nav-item" onClick={()=>setMenuOpen(false)}>About Us</NavLink></li>
+                                <li><NavLink to="contact" className="nav-item" onClick={()=>setMenuOpen(false)}>Contact Us</NavLink></li>
+                                <li><NavLink to="joinus" className="nav-item" onClick={()=>setMenuOpen(false)}>Sign in/ Register</NavLink></li>
                             </ul>
                         </div>
                         <div className="hamburger" onClick={toggleMenu}>
