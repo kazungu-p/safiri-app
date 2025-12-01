@@ -7,6 +7,30 @@ ul{
 a{
     text-decoration: none;
 }
+.link-button{
+    border: 0;
+    outline: 0;
+    font-size: 15.5px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    padding: 3px 0;
+}
+.link-button::after{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(135deg, #D92C54, #932F67);
+    content: "";
+    transition: width 0.3s ease-in-out;
+}
+.link-button:hover::after{
+    width: 100%;
+}
 .nav-top ul{
     display: flex;
     justify-content: flex-end;

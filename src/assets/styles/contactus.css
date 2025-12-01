@@ -33,15 +33,16 @@
     padding: 10px 5px;
     flex: 1;
     resize: vertical;
+    font-size: 0.9em;
 }
-.form-group{
+.contact-form-container .form-group{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
 }
-.form-group label{
+.contact-form-container .form-group label{
     width: 100px;
 }
 .contact-us-group{
@@ -57,13 +58,11 @@
         display: flex;
         flex-direction: column;
     }
-    .form-group label{
-    width: 70px;
-    }
+
     .contact-us-group img{
     width: 22px;
     }
-    .form-group label{
+    .contact-form-container .form-group label{
         display: none;
     }
 }
