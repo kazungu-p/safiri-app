@@ -3,20 +3,22 @@ import ReusableForm from "./ReusableForm";
 import "../assets/styles/contactus.css"
 
 function Contactus() {
+
     return (
         <div className="contact-container">
             <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Get in touch with us via the form below, or reach out using the contact details provided.</p>
             <div className="box-container">
                 <div className="contact-form-container">
                     <ReusableForm 
                         buttonText="Send"
                         fields={
                             [
-                                {label: "Name", type: "text", name: "name", placeholder: "Name", required : true},
+                                {label: "Name", type: "text", name: "name", placeholder: "Your Full Name", required : true},
                                 {label: "Phone", type: "text", name: "phone", placeholder: "Phone Number", required: true},
-                                {label: "Email", type: "email", name: "email", placeholder: "Email address", required: true},
+                                {label: "Email", type: "email", name: "email", placeholder: "Your Email address", required: true},
                                 {label: "Subject", type: "text", name: "subject", placeholder: "Subject", required: true},
-                                {label: "Message", type: "textarea", name: "message", placeholder: "Message", required: true}
+                                {label: "Message", type: "textarea", name: "message", placeholder: "Your Message goes here", required: true}
                             ]
                         }
                     />
