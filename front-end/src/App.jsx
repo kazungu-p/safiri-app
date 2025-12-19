@@ -9,22 +9,22 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Modal from "./components/Modal";
+import BookingPage from"./components/BookingPage";
 
 function App() {
-   const [modalOpen, setModalOpen] = useState(false);
-
+  const [modalOpen, setModalOpen] =useState(false)
   return (
     <div className="app-wrapper">
       <Router>
-        <Navbar openModal={() => setModalOpen(true)}/>
-        <Modal isOpen={modalOpen} closeModal={() => setModalOpen(false)} />
+        <Navbar setModalOpen={setModalOpen}/>
+        {modalOpen? <Modal setModalOpen={setModalOpen}/>: <></>}
 
           <div className="content">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/join" />
+              <Route path="/travel" element={<BookingPage/>}/>
             </Routes>
           </div>
 

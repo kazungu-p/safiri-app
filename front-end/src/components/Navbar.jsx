@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../assets/styles/navbar.css";
 import { NavLink } from "react-router-dom";
 
-function Navbar({ openModal }){
+function Navbar({ setModalOpen }){
 
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -30,7 +30,7 @@ function Navbar({ openModal }){
                                 <li><NavLink to="/" className="nav-item" onClick={()=>setMenuOpen(false)}>Home</NavLink></li>
                                 <li><NavLink to="/about" className="nav-item" onClick={()=>setMenuOpen(false)}>About Us</NavLink></li>
                                 <li><NavLink to="contact" className="nav-item" onClick={()=>setMenuOpen(false)}>Contact Us</NavLink></li>
-                                <li><button type="button" className="link-button" onClick={openModal}>Sign in/Register</button></li>
+                                <li><button type="button" className="link-button" onClick={()=>setModalOpen(true)}>Sign in</button></li>
                             </ul>
                         </div>
                         <div className="hamburger" onClick={toggleMenu}>

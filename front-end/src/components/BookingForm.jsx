@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import destinations from "../assets/data/destinations";
 
+
 function BookingForm(){
 
     function handleSubmit(event){
@@ -27,7 +28,7 @@ function BookingForm(){
                 ))}
             </select>
             
-            <button type="submit" disabled={!from || !to}>Search</button> 
+            <button type="submit" disabled={!from || !to}>Search</button>
         </form>
     )
 
