@@ -23,7 +23,7 @@ function Navbar({ setModalOpen }){
                     </div>
                     <div className="nav-bottom">
                         <div className="logo-container">
-                            <img src="/images/destination.png" alt="logo-image" className="logo"/>
+                           <NavLink to="/"><img src="/images/destination.png" alt="logo-image"  className="logo"/></NavLink> 
                         </div>
                         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
                             <ul>

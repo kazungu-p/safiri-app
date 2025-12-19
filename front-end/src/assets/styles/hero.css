@@ -38,11 +38,11 @@
     outline: 0;
     padding: 10px;
     cursor: pointer;
+    font-size: 16px;
 }
 .form-container form button{
     background: orangered;
     color: white;
-    font-size: 18px;
 }
 
 @media screen  and (max-width: 750px){
