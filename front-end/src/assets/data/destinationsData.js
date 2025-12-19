@@ -1,37 +1,37 @@
 const destinationsData =[
     {
     key: 1,
-    image: "/images/ohio.jpeg",
+    image: "/images/lamu.jpg",
     heading: "Lamu",
     description: "2500"
     },
     {
     key: 2,
-    image: "/images/kansas.jpeg",
+    image: "/images/nairobi.webp",
     heading: "Nairobi",
     description: "2500"
     },
     {
     key: 3,
-    image: "/images/toronto.jpeg",
+    image: "/images/mombasa.jpg",
     heading: "Mombasa",
     description: "2500"
     },
     {
     key: 4,
-    image: "/images/new york.jpeg",
+    image: "/images/nakuru.jpg",
     heading: "Nakuru",
     description: "2500"
     },
     {
     key: 5,
-    image: "/images/dc.jpg",
+    image: "/images/kisumu.jpeg",
     heading: "Kisumu",
     description: "2500"
     },
     {
     key: 6,
-    image: "/images/oregon.jpeg",
+    image: "/images/nanyuki.jpeg",
     heading: "Nanyuki",
     description: "2500"
     }
