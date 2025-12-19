@@ -62,3 +62,8 @@
   color: #932F67;
   cursor: pointer;
 }
+@media screen and (max-width: 750px){
+  .modal-container form{
+    width: 310px;
+  }
+}
