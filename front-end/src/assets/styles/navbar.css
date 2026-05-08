@@ -113,3 +113,21 @@ a{
         width: 35px;
     }
 }
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.user-greeting {
+  color: white;
+  font-size: 14px;
+  opacity: 0.85;
+}
+.signout-btn {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.signout-btn:hover {
+  opacity: 1;
+}

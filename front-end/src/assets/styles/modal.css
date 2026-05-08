@@ -67,3 +67,9 @@
     width: 290px;
   }
 }
+.modal-error {
+  color: #D92C54;
+  font-size: 13px;
+  font-weight: 500;
+  margin: -10px 0;
+}

@@ -12,12 +12,13 @@ import Modal from "./components/Modal";
 import BookingPage from"./components/BookingPage";
 
 function App() {
-  const [modalOpen, setModalOpen] =useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
+  const [user, setUser] = useState(null);
   return (
     <div className="app-wrapper">
       <Router>
-        <Navbar setModalOpen={setModalOpen}/>
-        {modalOpen? <Modal setModalOpen={setModalOpen}/>: <></>}
+        <Navbar setModalOpen={setModalOpen} user={user} setUser={setUser}/>
+        {modalOpen? <Modal setModalOpen={setModalOpen} setUser={setUser}/>: <></>}
 
           <div className="content">
             <Routes>
