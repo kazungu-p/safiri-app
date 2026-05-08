@@ -14,7 +14,7 @@ function BookingForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    navigate("/travel")
+    navigate(`/travel?from=${encodeURIComponent(from)}&to=${encodeURIComponent(to)}`);
   }
 
   const toOptions = from ? destinations[from] : [];
